@@ -1,0 +1,89 @@
+/***********************About Me***********************************/
+
+.aboutMe {
+  padding: 0 10%;
+  margin: 50px 0;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+h3.slideIn {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+
+.contentAbout p {
+  width: 100%;
+}
+
+.contentAbout .signiture {
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: 'Bonheur Royale', cursive;
+  font-weight: 600;
+}
+
+.photosAbout {
+  display: flex;
+  flex-direction: column;
+}
+
+.photosAbout img {
+  width: 150px;
+  height: 150px;
+  margin: 25px auto;
+  display: block;
+  filter: grayscale(75%);
+}
+
+.photosAbout .rv{
+transform: rotate(-25deg);
+}
+
+.photosAbout .fitness{
+transform: rotate(15deg);
+}
+
+.photosAbout .work{
+transform: rotate(-5deg);
+}
+
+
+@media all and (min-width: 700px) {
+  .d-flex {
+    flex-direction: row;
+    padding-bottom: 50px;
+  }
+
+  .contentAbout,
+  .photosAbout {
+    width: 50%;
+  }
+
+  .photosAbout img {
+    margin: 0;
+    border-radius: 3px;
+  }
+
+  .photosAbout .rv {
+    position: absolute;
+    top: 200px;
+    left: 65%;
+  }
+
+  .photosAbout .fitness {
+    position: absolute;
+    top: 350px;
+    left: 75%;
+  }
+
+  .photosAbout .work {
+    position: absolute;
+    top: 500px;
+    left: 65%;
+  }
+}

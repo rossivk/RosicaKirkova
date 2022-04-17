@@ -1,0 +1,801 @@
+@import "slideshowAccordion.css";
+@import "aboutme.css";
+@import "resume.css";
+
+
+/* :root {
+  --accentColor: #B22E42;
+  --fontColor: #2F1C1E;
+  --fontColorTransparent: rgb(47,28,30,0.75);
+  --background: #ECEAEA;
+  --background1: #ECE4E1;
+  --whiteCiltured: #F1F5F8;
+  --harvestGold: #B22E42;
+} */
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #2F1C1E;
+  margin: 0;
+}
+
+.color {
+  color: #B22E42;
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 10vw;
+  font-weight: 900;
+  color: #2F1C1E;
+}
+
+h2 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 5.7vw;
+  color: #2F1C1E;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 4.6vw;
+  color: #2F1C1E;
+}
+
+h4 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.25rem;
+  margin: 10px auto;
+  color: #2F1C1E;
+}
+
+h5 {
+  font-family: 'Red Hat Text', sans-serif;
+  font-weight: 500;
+  font-size: 3.4vw;
+  color: #2F1C1E;
+}
+
+h6 {
+  font-family: 'Bonheur Royale', cursive;
+  font-size: 5.7vw;
+  color: #2F1C1E;
+  margin: 1.5rem 0;
+}
+
+p {
+  line-height: 2;
+  font-size: 4vw;
+  margin: 0;
+}
+
+@media all and (min-width: 400px) {
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media all and (min-width: 700px) {
+  h1 {
+    font-size: 4.375rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  h6 {
+    font-size: 2.5rem;
+  }
+}
+
+
+
+hr {
+  border: dotted #F0CCD1 0.4rem;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+a {
+  color: #3A141A;
+  font-family: 'Red Hat Text', sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #B22E42;
+}
+
+li {
+  list-style: none;
+}
+
+
+/* navigation */
+nav {
+  padding: 10px 2.5%;
+}
+
+.menu {
+  margin: 0;
+}
+
+.companyName .logo img {
+  height: 25px;
+  width: auto;
+}
+
+.item:not(.social) a:hover,
+.item a:hover::after {
+  color: #B22E42;
+}
+
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+
+}
+
+.toggle {
+  order: 1;
+  font-size: 24px;
+  text-align: right;
+
+}
+
+.mainMenu li.item {
+  order: 2;
+}
+
+/* .socialIcon li.item {
+  order: 3;
+  border-top: 1px #B22E42 solid;
+} */
+.mainMenu li.item,
+.socialIcon li.item {
+  display: none;
+  text-align: center;
+  padding: 10px;
+}
+
+.active .mainMenu li.item,
+.active .socialIcon li.item.social {
+  display: block;
+}
+
+.social i:hover,
+.toggle i:hover {
+  color: #B22E42;
+}
+
+.companyName {
+  width: 10%;
+}
+
+.mainMenu {
+  order: 2;
+  width: 100%;
+}
+
+/* .socialIcon {
+  order: 3;
+  width: 100%;
+} */
+
+.humburger {
+  width: 10%;
+  order: 1;
+}
+
+/* Tablet menu */
+@media all and (min-width: 700px) {
+  .socialIcon li.item.social {
+    display: flex;
+    cursor: pointer;
+    border-top: 0;
+  }
+
+  .mainMenu {
+    order: 3;
+    width: 100%;
+  }
+
+  /* .socialIcon {
+    order: 1;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  } */
+  .humburger {
+    width: 10%;
+    order: 2;
+  }
+}
+
+/* Desktop menu */
+@media all and (min-width: 960px) {
+  .menu {
+    /* align-items: flex-start; */
+    flex-wrap: nowrap;
+    /* background: none; */
+  }
+
+  .companyName {
+    width: 10%;
+  }
+
+  .mainMenu {
+    display: flex;
+    font-size: 0.875rem;
+    width: 80%;
+    order: 2;
+    justify-content: flex-end;
+  }
+
+  .mainMenu li.item {
+    display: flex;
+    padding: 0 3%;
+    border-right: 1px solid #B22E42;
+  }
+
+  .mainMenu li.item a.current {
+    cursor: default;
+  }
+
+  .mainMenu li.item.noRightPadding {
+    padding-right: 0;
+    border-right: none;
+  }
+
+  .humburger {
+    display: none;
+  }
+
+  .mainMenu li.item a.inactive {
+    transition: transform .3s;
+  }
+
+  .mainMenu li.item a.inactive:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+/************TopSection***********/
+.coverRvk {
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.background-image {
+  background: url(../images/rvk-design.png);
+  background-position: 25% top;
+  background-repeat: no-repeat;
+  height: 760px;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.05;
+}
+
+.top-container-left {
+  width: 100%;
+}
+
+h6.hiIamRossi {
+  margin-top: 100px;
+}
+
+p.web-graphics-videos {
+  margin: 0 0 150px;
+}
+
+.top-container-right {
+  display: flex;
+  width: 100%;
+}
+
+.top-container-right img.rossi {
+  margin: 100px auto 50px;
+  width: 150px;
+}
+
+/* Desktop view */
+@media all and (min-width: 1080px) {
+  .coverRvk {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+  }
+
+  .top-container-left {
+    width: 70%;
+  }
+
+  .top-container-right {
+    display: inline;
+    width: 30%;
+  }
+
+  .top-container-right img.rossi {
+    margin-top: 100px;
+    width: 243px;
+    height: 243px;
+  }
+
+  .rossi.slideIn {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      opacity: 0;
+      margin-left: 50%;
+    }
+
+    to {
+      opacity: 1;
+      margin-left: 0%;
+    }
+  }
+
+}
+
+/******x*****TopSection*****x*****/
+
+
+/************WhatIDO***********/
+
+.whatIdo {
+  background: linear-gradient(to bottom, rgb(255, 255, 255, 0) 0%, #ECEAEA 100%);
+  padding: 25px 10% 0;
+  text-align: center;
+}
+
+.whatIdo .title {
+  padding-bottom: 25px;
+
+
+}
+
+.whatIdo .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cell img {
+  width: 75px;
+  height: 75px;
+}
+
+.whatIdo .container .cell p {
+  padding-bottom: 35px;
+}
+
+@media all and (min-width: 960px) {
+  .whatIdo {
+    margin-top: 200px;
+    padding: 0 10%;
+  }
+
+  .whatIdo .container {
+    flex-direction: row;
+  }
+
+  .whatIdo .container .cell {
+    padding: 50px 25px;
+    margin: 0 10px 25px;
+
+  }
+
+
+}
+
+/******X*****WhatIDO*****X*****/
+
+/************MyWork***********/
+.myWork {
+  background-color: #ECEAEA;
+}
+
+.myWork h2 {
+  text-align: center;
+  margin: 0;
+  padding: 50px 0;
+
+}
+
+/*****X******MyWork*****X*****/
+
+/************MySkills***********/
+
+.skills {
+  background-image: url("../images/skills-background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 550px;
+  width: 100%;
+  padding: 100px 0 50px;
+}
+
+.skills h2 {
+  text-align: center;
+  margin: -50px 0 75px;
+}
+
+.skills ul.skills-inline {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.skills ul.skills-inline li {
+
+  padding: 0 5%;
+}
+
+.skills-inline img {
+  width: 75%;
+
+}
+
+.main1 {
+  padding-top: 50px;
+}
+
+@media all and (min-width: 700px) {
+  .skills {
+    min-height: 700px;
+    padding: 200px 0 50px;
+  }
+}
+
+/*****X******ContactMe*****X*****/
+
+#contactMe {
+  background: linear-gradient(to bottom, #ECEAEA 25%, #B22E42 100%);
+  padding-top: 50px;
+  text-align: center;
+}
+
+#contactMe h2 {
+  margin: -100px 0 0;
+}
+
+
+
+#contactMe .left h3 {
+  margin: 25px 0;
+}
+
+#contactMe .left p:first-of-type {
+  margin: 50px 0;
+}
+
+.fa {
+  margin-right: 10px;
+}
+
+.location,
+.phone,
+.email {
+  color: #B22E42;
+}
+
+#contactMe .container .right {
+  margin: 0 auto;
+  background: transparent;
+}
+
+#contact {
+  /* background: #F9F9F9; */
+  border-radius: 3px;
+  padding: 40px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+fieldset {
+  border: none;
+  margin: 30px 0 0;
+  min-width: 210px;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #B22E42;
+  border-radius: 3px;
+  background: #FEFBFB;
+  margin: 0 -10px 5px;
+  padding: 10px;
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #F0CCD1;
+
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: vertical;
+}
+
+::-webkit-input-placeholder {
+  color: #2F1C1E;
+  opacity: 0.3;
+
+}
+
+:-moz-placeholder {
+  color: #2F1C1E;
+  opacity: 0.3;
+}
+
+::-moz-placeholder {
+  color: #2F1C1E;
+  opacity: 0.3;
+}
+
+:-ms-input-placeholder {
+  color: #2F1C1E;
+  opacity: 0.3;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  /* width: 25%; */
+  border: none;
+  border-radius: 3px;
+  background: #ECE4E1;
+  color: #B22E42;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: transform .5s;
+  float: center;
+  width: 100%;
+
+}
+
+#contact button[type="submit"]:hover {
+  background: transparent;
+  border: 1px solid #ECE4E1;
+  color: #ECE4E1;
+  text-decoration: none;
+  -ms-transform: scale(1.07);
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+}
+
+@media all and (min-width: 600px) {
+  #contactMe {
+    background: #ECEAEA;
+    padding: 50px 0 50px;
+    text-align: center;
+  }
+
+  #contact {
+    /* background: #B22E42; */
+    padding: 20px 50px 50px;
+  }
+
+  #contactMe .container .right {
+    width: 50vw;
+    margin: 50px auto 0;
+  }
+
+  #contact button[type="submit"] {
+    background: #B22E42;
+    color: #ECE4E1;
+  }
+
+  #contact button[type="submit"]:hover {
+    border: 1px solid #B22E42;
+    color: #B22E42;
+  }
+}
+
+@media all and (min-width: 700px) {
+  #contactMe h2 {
+    margin: -175px 0 0;
+  }
+
+}
+
+@media all and (min-width: 900px) {
+  #contactMe .container .right {
+    width: 35vw;
+
+
+  }
+}
+
+/*******************Footer*********************/
+
+.footer {
+  background-color: #B22E42;
+  padding: 25px 0 25px;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+}
+
+.copyright {
+  color: #F0CCD1;
+  font-size: 0.75rem;
+  padding: 10px 0;
+}
+
+.footer-link {
+  color: #F0CCD1;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.footer-link:hover {
+  color: #3A141A;
+  font-weight: 500;
+}
+
+/*********X*********Footer*********X***********/
+
+/* REPETATIVE CLASSES ///////////////////////////////////////////////////// */
+.btn {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border: none;
+  border-radius: 3px;
+  color: #ECE4E1;
+  cursor: pointer;
+  background: #b22e42;
+  padding: 10px 20px;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: transform .3s;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #b22e42;
+  text-decoration: none;
+  -ms-transform: scale(1.07);
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  border: 1px solid #b22e42;
+}
+
+
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+&.one {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+&.two {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+&.three {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+
+/**********************Scroll to top button**********************/
+
+#scrollTopBtn {
+  display: none;
+  right: 10px;
+  bottom: 20px;
+  position: fixed;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.fa-solid.fa-hand-point-up {
+  color: #3A141A;
+  opacity: 0.5;
+  font-size: 1.125rem;
+  z-index: 5;
+}
+
+.fa-solid.fa-hand-point-up:hover {
+  opacity: 1;
+}
+
+/************x*********Scroll to top button************x*********/

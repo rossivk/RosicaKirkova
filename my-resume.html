@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rosica Kirkova Resume</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Red+Hat+Display:ital,wght@0,800;0,900;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/95c60f7d3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <ul class="menu">
+      <div class="companyName">
+        <li class="logo"><a href="index.html"><img src="images/rvk-design.svg" alt="RVK logo"></a></li>
+      </div>
+      <div class="mainMenu">
+        <li class="item"><a href="index.html" class="inactive">Home</a></li>
+        <li class="item"><a href="about-me.html" class="inactive">About <span class=color>Me</span></a></li>
+        <li class="item"><a href="my-work.html" class="inactive"><span class=color>My</span> Work</a></li>
+        <li class="item"><a href="index.html#contactMe" class="inactive">Contact <span class=color>Me</span></a></li>
+        <li class="item noRightPadding"><a href="my-resume.html" class="current">My <span
+              class=color><strong>Resume</strong></span></a></li>
+        </li>
+      </div>
+      <div class="humburger">
+        <li class="toggle"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+      </div>
+    </ul>
+  </nav>
+  <section class="resume fade-in one">
+
+    <div class="beforeResumeColumn">
+    </div>
+    <div class="myResume">
+      <h2>My <span class="color">Resume </span>
+        <a class="zoomIn" href="https://drive.google.com/file/d/1N3m7xrBWlm2t4c_JlU-nY4SVxOCSq8CW/view?usp=sharing"
+          target="_blank">[print me]</a>
+      </h2>
+    </div>
+
+  </section>
+
+  <!------- Timeline ----------->
+  <!-- https://codepen.io/htmlcodex/pen/LYGjPgV -->
+
+  <section class="timelineResume fade-in two">
+    <div class="beforeTimelineColumn">
+    </div>
+    <div class="timeline">
+      <div class="container right">
+        <div class="date">2021<br />Current</div>
+        <i class="icon fa-solid fa-laptop-code"></i>
+        <div class="content">
+          <h5>Web Design</h5>
+          <p><em>Freelance, <a href="my-work.html">Link to <strong>My Work</strong></a></em></p>
+          <p><span id="dots">...</span>
+            <span id="more">
+              Branding, designing, revamping and
+              developing websites for small businesses using Figma,
+              Elementor, Wordpress, HTML and CSS.
+            </span>
+          </p>
+          <button class="readMore" onclick="functionReadMore()" id="myBtn">Read more</button>
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="date">2012<br />2020</div>
+        <i class="icon fa-solid fa-bezier-curve"></i>
+        <div class="content">
+          <h5>PDMS CATS & SPECS, Animator, Graphic designer</h5>
+          <p><em><a href="https://www.genesisenergies.com/">Freelance,
+                Genesis Oil & Gas Consultants Ltd.</a></em></p>
+          <p><span id="dots1">...</span>
+            <span id="more1">
+              <strong>PDMS CATS & SPECS.</strong>
+              Establishing and creating catalogues and specifications (various projects)
+              Maintaining the catalogues and specifications for 3D modelling in PDMS and
+              E3D environments in accordance with verified engineering specifications,
+              datasheets and reference materials provided by a client.
+              <br>
+              The catalogues and specifications are designed and created to
+              include valuable information such as text details,
+              materials, physical properties, nuts and bolts or any information used in
+              PDMS/E3D that is required for the output of 2D drawings, bills of material/MTO,
+              isometrics or client specific outputs.
+              <br>A point of contact for piping layout designers
+              and assist them with new/updated components throughout the project.
+              Project creation and maintaining it.
+              <br><br><strong>Animator.</strong> Creating animations fly through of the PDMS models using
+              Navisworks Manage, Autodesk 3ds Max, Adobe After Effects for presentation to the client.
+              <br>Creating other animations to help the clients understand clearly the model and how it will work.
+              <br><br><strong>Graphic Designer.</strong> Working with the in house graphic design team.
+              The tasks includedcreating visual concepts, develop an overall layout and production
+              design for applications such as advertisements, brochures, magazines, and reports.
+            </span>
+          </p>
+          <button class="readMore" onclick="functionReadMore1()" id="myBtn1">Read more</button>
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="date">2012<br />2008</div>
+        <i class="icon fa-solid fa-city"></i>
+        <div class="content">
+          <h5>Architect's Assistant</h5>
+          <p><em><a href="https://www.glaad.co.uk/">GLA Architecture & design Ltd., London</a></em></p>
+          <p> <span id="dots2">...</span>
+            <span id="more2"> Working on various projects my tasks included:
+              Creating 3D models from architectural plans using Autodesk 3ds Max, Autodesk Autocad
+              and Vectorworks. Enhancing renders of the model and adding special
+              effects using Adobe Photoshop.Preparing
+              detailed working drawings and specifications.
+              Performing drafting tasks and research for
+              the purpose of project plans, creation of 2D space planning,
+              electrical and design detailed drawings using Autodesk Autocad.
+            </span>
+          </p>
+          <button class="readMore" onclick="functionReadMore2()" id="myBtn2">Read more</button>
+        </div>
+      </div>
+    </div>
+    <div class="afterTimelineColumn">
+    </div>
+  </section>
+  <br>
+  <section class="downloadResume">
+    <div class="downloadResume1 slideIn">
+      <a href="https://drive.google.com/file/d/1N3m7xrBWlm2t4c_JlU-nY4SVxOCSq8CW/view?usp=sharing" target="_blank"
+        download>
+        <img class="zoomIn" src="images\print-resume.jpg" alt="Resume to print">
+      </a>
+    </div>
+    <!-- <div class="downloadResume1 slideIn">
+      <a href="online-view-resume-rosicakirkova.pdf" target="_blank" download>
+        <img class="zoomIn" src="images\view-resume-online.jpg" alt="Resume to view online">
+      </a>
+    </div> -->
+  </section>
+
+
+  <section>
+    <div class="footer">
+      <a class="footer-link" href="https://www.linkedin.com/in/rosica-kirkova-6677183a/">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/">Twitter</a>
+      <a class="footer-link" href="#">Website</a>
+      <p class="copyright">©2022 Rosica Kirkova @Frallen Ltd.</p>
+    </div>
+  </section>
+
+  <button id="scrollTopBtn">
+    <i class="fa-solid fa-hand-point-up fa-beat"></i>
+  </button>
+
+</body>
+
+
+<script src="resume.js" charset="utf-8"></script>
+<script src="index.js" charset="utf-8"></script>
+
+</html>

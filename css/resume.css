@@ -1,0 +1,184 @@
+/***************My Resume*******************/
+
+
+.resume {
+  display: flex;
+  margin: 50px 0;
+  align-items: center;
+}
+
+.beforeResumeColumn {
+  content: '';
+  width: 10%;
+}
+
+.afterResumeColumn {
+  content: '';
+  width: 40%;
+  text-align: right;
+}
+
+.afterResumeColumn a img {
+  padding:5%;
+  width: 75px;
+
+}
+
+.downloadResume {
+display: flex;
+margin-left: 30%;
+}
+
+.downloadResume1.slideIn {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.downloadResume .downloadResume1 a img {
+  width: 75px;
+  height: auto;
+  margin: 0 15px 25px 0;
+}
+
+
+.myResume {
+  width: 50%;
+  margin-left: 20%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+.timelineResume {
+  display: flex;
+  background-color: #FAF8F7;
+
+}
+
+.beforeTimelineColumn,
+.afterTimelineColumn {
+  content: '';
+  width: 10%;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background: #B22E42;
+  top: 30px;
+  bottom: 30px;
+  left: 20%;
+  margin-left: -0.5px;
+}
+
+.timeline .container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 85%;
+}
+
+.timeline .container.right {
+  left: 20%;
+}
+
+
+.timeline .container::before {
+  content: '';
+  position: absolute;
+  width: 22.5px;
+  height: 1px;
+  top: 35px;
+  right: 8px;
+  background: #B22E42;
+  z-index: 1;
+}
+
+.timeline .container.right::before {
+  left: 8px;
+}
+
+.timelineResume .date {
+  position: absolute;
+  display: inline-block;
+  top: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #B22E42;
+  z-index: 1;
+  left: -75px;
+}
+
+.timelineResume .icon  {
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 7px 0;
+  top: 25px;
+  background: #ECE4E1;
+  border: 1px solid ;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  color: #B22E42;
+  z-index: 1;
+  left: -15px;
+}
+
+.timeline .container .content  {
+  padding: 20px;
+  background: #ECE4E1;
+  position: relative;
+  border-radius: 5px;
+}
+
+.timeline .container .content h5 {
+  margin: 0 0 10px 0;
+}
+
+
+#more,
+#more1,
+#more2 {
+  display: none;
+}
+
+.readMore {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: none;
+  border-radius: 5px;
+  color: #ECE4E1;
+  cursor: pointer;
+  background: #b22e42;
+  padding: 5px 10px;
+  font-size: 0.725rem;
+  text-decoration: none;
+  transition: transform .3s;
+}
+
+.readMore:hover {
+  background: transparent;
+  color: #b22e42;
+  text-decoration: none;
+  -ms-transform: scale(1.07);
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+  border: 1px solid #b22e42;
+}
+
+/*******x*******My Resume*********x*********/

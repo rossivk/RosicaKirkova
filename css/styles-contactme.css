@@ -1,0 +1,259 @@
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #2F1C1E;
+  margin: 0;
+
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #2F1C1E;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+
+h2 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 2.5rem;
+  color: #2F1C1E;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 2rem;
+  color: #2F1C1E;
+}
+
+h4 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.75rem;
+  margin: 10px auto;
+  color: #2F1C1E;
+}
+
+h5 {
+  font-family: 'Red Hat Text', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #2F1C1E;
+}
+
+h6 {
+  font-family: 'Bonheur Royale', cursive;
+  font-size: 2.5rem;
+  color: #2F1C1E;
+}
+
+p {
+  line-height: 2;
+}
+
+hr {
+  margin: 100px 0;
+  border: none;
+  height: 0.5px;
+  background-color: #2F1C1E;
+}
+
+/* /////////////////////////////////////////////////////// */
+
+
+
+/* /////////////////////////////////////////////////////// */
+
+#contact1 {
+  background: #F9F9F9;
+  border-radius: 5px;
+  padding: 50px 50px 100px;
+  margin: 50px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact1 input[type="text"],
+#contact1 input[type="email"],
+#contact1 textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #FEFBFB;
+  margin: 5px -10px 20px;
+  padding: 10px;
+}
+
+#contact1 input[type="text"]:hover,
+#contact1 input[type="email"]:hover,
+#contact1 textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #B22E42;
+}
+
+#contact1 input:focus,
+#contact1 textarea:focus {
+  outline: 0;
+  border: 1px solid #F0CCD1;
+
+}
+
+#contact1 textarea {
+  resize: vertical;
+}
+
+.label {
+  text-align: left;
+}
+
+#contact1 button[type="submit"] {
+  cursor: pointer;
+  /* width: 25%; */
+  border: none;
+  border-radius: 5px;
+  background: #B22E42;
+  color: #ECE4E1;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: transform .5s;
+  float: left;
+
+}
+
+#contact1 button[type="submit"]:hover {
+  background: #d26576;
+  background-image: -webkit-linear-gradient(top, #b22e44, #d26576);
+  background-image: -moz-linear-gradient(top, #b22e44, #d26576);
+  background-image: -ms-linear-gradient(top, #b22e44, #d26576);
+  background-image: -o-linear-gradient(top, #b22e44, #d26576);
+  background-image: linear-gradient(to bottom, #b22e44, #d26576);
+  color: #fcfbfb;
+  text-decoration: none;
+  -ms-transform: scale(1.07);
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+}
+
+#contact1 button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
+
+/* #contact input[type="text"],
+#contact input[type="email"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Red Hat Text", sans-serif;
+
+} */
+
+#contact {
+  background: #F9F9F9;
+  border-radius: 5px;
+  padding: 50px;
+  margin: 50px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+fieldset {
+  border: medium none !important;
+
+  margin: 0 0 20px;
+  min-width: 250px;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #FEFBFB;
+  margin: 0 -10px 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #B22E42;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: vertical;
+}
+
+::-webkit-input-placeholder {
+  color: #2F1C1E;
+  opacity: 0.5;
+}
+
+:-moz-placeholder {
+  color: #2F1C1E;
+  opacity: 0.5;
+}
+
+::-moz-placeholder {
+  color: #2F1C1E;
+  opacity: 0.5;
+}
+
+:-ms-input-placeholder {
+  color: #2F1C1E;
+  opacity: 0.5;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  /* width: 25%; */
+  border: none;
+  border-radius: 5px;
+  background: #B22E42;
+  color: #ECE4E1;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: transform .5s;
+  float: left;
+
+}
+
+#contact button[type="submit"]:hover {
+  background: #d26576;
+  background-image: -webkit-linear-gradient(top, #b22e44, #d26576);
+  background-image: -moz-linear-gradient(top, #b22e44, #d26576);
+  background-image: -ms-linear-gradient(top, #b22e44, #d26576);
+  background-image: -o-linear-gradient(top, #b22e44, #d26576);
+  background-image: linear-gradient(to bottom, #b22e44, #d26576);
+  color: #fcfbfb;
+  text-decoration: none;
+  -ms-transform: scale(1.07);
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #F0CCD1;
+}
