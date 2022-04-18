@@ -352,14 +352,14 @@ p.web-graphics-videos {
   }
 
   .rossi.slideIn {
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: slidein;
   }
 
   @keyframes slidein {
     from {
       opacity: 0;
-      margin-left: 50%;
+      margin-left: 25%;
     }
 
     to {
