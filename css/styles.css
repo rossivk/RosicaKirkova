@@ -1,5 +1,4 @@
 @import "slideshowAccordion.css";
-@import "aboutme.css";
 @import "resume.css";
 
 
@@ -371,6 +370,27 @@ p.web-graphics-videos {
 }
 
 /******x*****TopSection*****x*****/
+/************AboutMe***********/
+
+.aboutMe {
+  text-align: center;
+  padding: 0 5% 0;
+}
+
+@media all and (min-width: 600px) {
+  .aboutMe {
+    padding: 0 20%;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .aboutMe {
+    margin-top: 200px;
+    padding: 0 20% 0;
+  }
+}
+
+/******x*****AboutMe*****x*****/
 
 
 /************WhatIDO***********/
@@ -383,8 +403,6 @@ p.web-graphics-videos {
 
 .whatIdo .title {
   padding-bottom: 25px;
-
-
 }
 
 .whatIdo .container {
@@ -403,7 +421,7 @@ p.web-graphics-videos {
 
 @media all and (min-width: 960px) {
   .whatIdo {
-    margin-top: 200px;
+    margin-top: 100px;
     padding: 0 10%;
   }
 
@@ -484,7 +502,8 @@ p.web-graphics-videos {
 /*****X******ContactMe*****X*****/
 
 #contactMe {
-  background: linear-gradient(to bottom, #ECEAEA 25%, #B22E42 100%);
+  /* background: linear-gradient(to bottom, #ECEAEA 25%, #B22E42 100%); */
+  background-color: #ECEAEA;
   padding-top: 50px;
   text-align: center;
 }
@@ -492,7 +511,6 @@ p.web-graphics-videos {
 #contactMe h2 {
   margin: -100px 0 0;
 }
-
 
 
 #contactMe .left h3 {
